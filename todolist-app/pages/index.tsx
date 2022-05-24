@@ -1,12 +1,13 @@
+import { Container } from '@mui/material'
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import TodoList from '../components/todolist'
-
+import Todoform from '../components/todoForm'
 const Home: NextPage = () => {
   return (
+    <Container maxWidth="sm">
     <TodoList/>
+    <Todoform/>
+    </Container>
   )
 }
 
